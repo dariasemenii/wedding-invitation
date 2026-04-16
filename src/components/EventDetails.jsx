@@ -7,7 +7,6 @@ export default function EventDetails() {
       <div className="ornament">✦</div>
 
       <div className="event-details__body">
-        <p className="event-details__label">Весілля · 15 серпня 2026</p>
         <h3 className="event-details__venue">Ресторан «Маєток»</h3>
         <p className="event-details__address">село Городилець</p>
         <div className="event-details__rule" />

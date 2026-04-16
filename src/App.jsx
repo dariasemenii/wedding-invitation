@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Hero from './components/Hero'
+import WeddingDate from './components/WeddingDate'
 import EventDetails from './components/EventDetails'
 import Timeline from './components/Timeline'
 import DressCode from './components/DressCode'
@@ -16,6 +17,7 @@ function App() {
     <>
       {showSplash && <SplashScreen onDismiss={() => setShowSplash(false)} />}
       <Hero />
+      <WeddingDate />
       <EventDetails />
       <Timeline />
       <DressCode />

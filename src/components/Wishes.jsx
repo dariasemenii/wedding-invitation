@@ -16,6 +16,16 @@ export default function Wishes() {
           будемо дуже раді 🍾
         </p>
       </div>
+
+      <div className="wishes__card">
+        <p className="wishes__text wishes__text--accent">
+          Грошові конверти будуть найкращим подарунком, 💌
+        </p>
+        <p className="wishes__text">
+          який ми з радістю використаємо<br />
+          для здійснення наших мрій і бажань
+        </p>
+      </div>
     </section>
   )
 }
