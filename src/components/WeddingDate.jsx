@@ -1,6 +1,6 @@
 import './WeddingDate.css'
+import { useReveal } from '../hooks/useReveal'
 
-// August 2026: starts on Saturday (Mon–Sun grid)
 const DAYS_OF_WEEK = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Нд']
 
 const WEEKS = [
@@ -13,9 +13,11 @@ const WEEKS = [
 ]
 
 export default function WeddingDate() {
+  const ref = useReveal()
+
   return (
     <section className="wedding-date">
-      <h2 className="section-title">Весілля відбудеться</h2>
+      <h2 className="section-title reveal" ref={ref}>Весілля відбудеться</h2>
       <div className="ornament">✦</div>
 
       <div className="wedding-date__calendar">
@@ -30,6 +32,7 @@ export default function WeddingDate() {
             <div
               key={i}
               className={`wedding-date__day${day === 15 ? ' wedding-date__day--highlight' : ''}${!day ? ' wedding-date__day--empty' : ''}`}
+              style={{ animationDelay: `${i * 0.018}s` }}
             >
               {day === 15 ? (
                 <>

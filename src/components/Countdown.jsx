@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import './Countdown.css'
+import { useReveal } from '../hooks/useReveal'
 
 const WEDDING_DATE = new Date('2026-08-15T13:00:00')
 
@@ -14,8 +15,33 @@ function getTimeLeft() {
   }
 }
 
+function CountdownUnit({ value, label, delay }) {
+  const [flipping, setFlipping] = useState(false)
+  const prevValue = useRef(value)
+  const ref = useReveal()
+
+  useEffect(() => {
+    if (prevValue.current !== value) {
+      setFlipping(true)
+      const t = setTimeout(() => setFlipping(false), 350)
+      prevValue.current = value
+      return () => clearTimeout(t)
+    }
+  }, [value])
+
+  return (
+    <div className="countdown__unit reveal" ref={ref} style={{ transitionDelay: delay }}>
+      <span className={`countdown__value${flipping ? ' countdown__value--flip' : ''}`}>
+        {String(value).padStart(2, '0')}
+      </span>
+      <span className="countdown__label">{label}</span>
+    </div>
+  )
+}
+
 export default function Countdown() {
   const [timeLeft, setTimeLeft] = useState(getTimeLeft)
+  const titleRef = useReveal()
 
   useEffect(() => {
     const id = setInterval(() => setTimeLeft(getTimeLeft()), 1000)
@@ -33,15 +59,12 @@ export default function Countdown() {
 
   return (
     <section className="countdown">
-      <h2 className="section-title">До весілля залишилось</h2>
+      <h2 className="section-title reveal" ref={titleRef}>До весілля залишилось</h2>
       <div className="ornament">✦</div>
 
       <div className="countdown__grid">
-        {units.map(({ value, label }) => (
-          <div className="countdown__unit" key={label}>
-            <span className="countdown__value">{String(value).padStart(2, '0')}</span>
-            <span className="countdown__label">{label}</span>
-          </div>
+        {units.map(({ value, label }, i) => (
+          <CountdownUnit key={label} value={value} label={label} delay={`${i * 0.1}s`} />
         ))}
       </div>
     </section>

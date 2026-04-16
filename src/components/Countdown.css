@@ -29,6 +29,15 @@
   letter-spacing: 0.02em;
 }
 
+.countdown__value--flip {
+  animation: flipUp 0.35s ease both;
+}
+
+@keyframes flipUp {
+  0%   { opacity: 0.3; transform: translateY(8px) scale(0.9); }
+  100% { opacity: 1;   transform: translateY(0)   scale(1); }
+}
+
 .countdown__label {
   font-family: var(--font-body);
   font-weight: 300;

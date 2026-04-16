@@ -4,43 +4,49 @@
   text-align: center;
 }
 
-.wishes__card {
+.wishes__list {
   max-width: 420px;
-  margin: 2.5rem auto 0;
-  border: 1px solid var(--color-border);
-  padding: 2.5rem 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.wishes__item {
+  padding: 2.5rem 1rem;
   position: relative;
 }
 
-.wishes__card::before,
-.wishes__card::after {
-  content: '✦';
+.wishes__item:not(:last-child)::after {
+  content: '·  ·  ·';
   position: absolute;
-  font-size: 0.6rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.65rem;
+  letter-spacing: 0.4em;
   color: var(--color-accent);
 }
 
-.wishes__card::before {
-  top: 0.6rem;
-  left: 0.8rem;
-}
-
-.wishes__card::after {
-  bottom: 0.6rem;
-  right: 0.8rem;
+.wishes__icon {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .wishes__text {
   font-family: var(--font-heading);
   font-weight: 300;
-  font-size: clamp(1rem, 3.2vw, 1.2rem);
+  font-size: clamp(0.95rem, 3vw, 1.1rem);
   color: var(--color-text-light);
-  line-height: 1.9;
-  margin: 0;
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
 }
 
-.wishes__text--accent {
+.wishes__accent {
+  font-family: var(--font-heading);
   font-weight: 400;
+  font-size: clamp(1rem, 3.2vw, 1.2rem);
   color: var(--color-text);
-  margin-top: 0.75rem;
+  line-height: 1.8;
 }
