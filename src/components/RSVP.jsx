@@ -10,14 +10,32 @@ export default function RSVP() {
 
   const [form, setForm] = useState({ name: '', attending: '', drinks: [] })
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
     if (!form.name.trim()) { setError('Будь ласка, вкажіть ваше ім\'я'); return }
     if (!form.attending)   { setError('Будь ласка, оберіть відповідь щодо участі'); return }
     setError('')
-    setSubmitted(true)
+    setLoading(true)
+    try {
+      const res = await fetch('https://formspree.io/f/xkokjvbd', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          name: form.name,
+          attending: form.attending,
+          drinks: form.drinks.join(', ') || '—',
+        }),
+      })
+      if (res.ok) setSubmitted(true)
+      else setError('Помилка. Спробуйте ще раз.')
+    } catch {
+      setError('Помилка. Перевірте з\'єднання і спробуйте ще раз.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   if (submitted) {
@@ -110,8 +128,8 @@ export default function RSVP() {
 
         {error && <p className="rsvp__error">{error}</p>}
 
-        <button className="rsvp__submit" type="submit">
-          Надіслати відповідь
+        <button className="rsvp__submit" type="submit" disabled={loading}>
+          {loading ? 'Надсилаємо…' : 'Надіслати відповідь'}
         </button>
 
       </form>
