@@ -11,11 +11,11 @@ export default function EventDetails() {
 
       <div className="event-details__body reveal" ref={ref}>
         <h3 className="event-details__venue">Ресторан «Маєток»</h3>
-        <p className="event-details__address">село Городилець</p>
+        <p className="event-details__address">Р15, 71, Городилець<br />Волинська область, 44804</p>
         <div className="event-details__rule" />
         <a
           className="event-details__map-btn"
-          href="https://maps.google.com/?q=Городилець,+Україна"
+          href="https://maps.app.goo.gl/CXfoAUvE5xctiKVt6"
           target="_blank"
           rel="noopener noreferrer"
         >

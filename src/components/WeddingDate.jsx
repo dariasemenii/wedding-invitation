@@ -1,5 +1,6 @@
 import './WeddingDate.css'
 import { useReveal } from '../hooks/useReveal'
+import WeddingDateDecor from './WeddingDateDecor'
 
 const DAYS_OF_WEEK = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Нд']
 
@@ -17,6 +18,8 @@ export default function WeddingDate() {
 
   return (
     <section className="wedding-date">
+      <WeddingDateDecor />
+
       <h2 className="section-title reveal" ref={ref}>Весілля відбудеться</h2>
       <div className="ornament">✦</div>
 

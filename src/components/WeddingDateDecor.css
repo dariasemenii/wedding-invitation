@@ -1,0 +1,73 @@
+.wd-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.wdd {
+  position: absolute;
+  animation: wddFloat 8s ease-in-out infinite;
+}
+
+.wdd--dove-l {
+  width: 110px; height: 85px;
+  top: 4%; left: -12px;
+  animation-delay: 0s;
+  animation-duration: 10s;
+}
+
+.wdd--dove-r {
+  width: 110px; height: 85px;
+  top: 4%; right: -12px;
+  animation-delay: 1.4s;
+  animation-duration: 10s;
+}
+
+.wdd--rings {
+  width: 110px; height: 62px;
+  bottom: 6%; left: -8px;
+  animation-delay: 0.8s;
+  animation-duration: 9s;
+}
+
+.wdd--petal-1 {
+  width: 40px; height: 65px;
+  top: 22%; right: 8%;
+  animation-delay: 2s;
+  animation-duration: 11s;
+}
+
+.wdd--petal-2 {
+  width: 34px; height: 56px;
+  bottom: 25%; right: 4%;
+  animation-delay: 3.5s;
+  animation-duration: 9s;
+}
+
+.wdd--spark-1 {
+  width: 24px; height: 24px;
+  top: 14%; left: 16%;
+  animation-delay: 0.5s;
+  animation-duration: 6s;
+}
+
+.wdd--spark-2 {
+  width: 18px; height: 18px;
+  bottom: 20%; right: 20%;
+  animation-delay: 2.5s;
+  animation-duration: 7s;
+}
+
+.wdd--spark-3 {
+  width: 16px; height: 16px;
+  top: 60%; left: 6%;
+  animation-delay: 1.2s;
+  animation-duration: 8s;
+}
+
+@keyframes wddFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33%       { transform: translateY(-10px) rotate(2deg); }
+  66%       { transform: translateY(-5px) rotate(-2deg); }
+}

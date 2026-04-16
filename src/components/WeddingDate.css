@@ -2,6 +2,8 @@
   padding: 5rem 2rem;
   background-color: #fff9f5;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .wedding-date__calendar {
@@ -80,6 +82,26 @@
   font-size: 0.75rem;
   color: #fff;
   letter-spacing: 0;
+}
+
+.wedding-date__details {
+  margin-top: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.6rem;
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+}
+
+.wedding-date__dot {
+  color: var(--color-primary);
+  font-size: 0.9rem;
 }
 
 @keyframes dayPopIn {

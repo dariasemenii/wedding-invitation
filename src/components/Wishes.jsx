@@ -1,5 +1,6 @@
 import './Wishes.css'
 import { useReveal } from '../hooks/useReveal'
+import WishesDecor from './WishesDecor'
 
 const items = [
   {
@@ -19,6 +20,7 @@ export default function Wishes() {
 
   return (
     <section className="wishes">
+      <WishesDecor />
       <h2 className="section-title reveal" ref={titleRef}>Побажання</h2>
       <div className="ornament">✦</div>
 

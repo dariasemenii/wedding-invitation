@@ -1,5 +1,6 @@
 import './Timeline.css'
 import { useReveal } from '../hooks/useReveal'
+import TimelineDecor from './TimelineDecor'
 
 const events = [
   { time: '13:00', title: 'Збір гостей',       description: 'Ресторан «Маєток»' },
@@ -13,6 +14,8 @@ export default function Timeline() {
 
   return (
     <section className="timeline-section">
+      <TimelineDecor />
+
       <h2 className="section-title reveal" ref={titleRef}>Програма дня</h2>
       <div className="ornament">✦</div>
 
