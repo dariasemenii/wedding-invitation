@@ -24,9 +24,8 @@
 }
 
 .splash__heart {
-  font-size: 5rem;
-  line-height: 1;
-  color: #c97a7a;
+  width: 5rem;
+  height: 4.7rem;
   animation: heartbeat 1.2s ease-in-out infinite;
   will-change: transform;
 }

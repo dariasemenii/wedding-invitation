@@ -64,12 +64,9 @@
 .wedding-date__heart {
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.4rem;
-  line-height: 1;
-  color: #c97a7a;
+  margin: auto;
+  width: 2.2rem;
+  height: 2.2rem;
   animation: heartbeat 1.2s ease-in-out infinite;
   will-change: transform;
 }
