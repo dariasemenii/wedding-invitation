@@ -23,16 +23,6 @@
   animation: splashFadeIn 1s ease both;
 }
 
-.splash__date {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 0.85rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--color-text-light);
-  margin: 0;
-}
-
 .splash__heart {
   font-size: 5rem;
   line-height: 1;
