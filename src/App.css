@@ -1,0 +1,56 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #fdf6f0;
+  --color-primary: #c9a98a;
+  --color-accent: #e8c4c4;
+  --color-text: #4a3f35;
+  --color-text-light: #8c7b6e;
+  --color-border: #e2d4c8;
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Lato', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  letter-spacing: 0.04em;
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.ornament {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto 2.5rem;
+  max-width: 200px;
+  color: var(--color-primary);
+  font-size: 1rem;
+}
+
+.ornament::before,
+.ornament::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-primary);
+}
