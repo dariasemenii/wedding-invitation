@@ -8,7 +8,7 @@ export default function RSVP() {
   const titleRef = useReveal()
   const formRef = useReveal()
 
-  const [form, setForm] = useState({ name: '', attending: '', drink: '' })
+  const [form, setForm] = useState({ name: '', attending: '', drinks: [] })
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState('')
 
@@ -83,21 +83,28 @@ export default function RSVP() {
         <div className="rsvp__field">
           <label className="rsvp__label">Якому напою Ви віддаєте перевагу?</label>
           <div className="rsvp__options rsvp__options--wrap">
-            {DRINKS.map(opt => (
-              <label
-                key={opt}
-                className={`rsvp__option${form.drink === opt ? ' rsvp__option--active' : ''}`}
-              >
-                <input
-                  type="radio"
-                  name="drink"
-                  value={opt}
-                  checked={form.drink === opt}
-                  onChange={() => setForm(f => ({ ...f, drink: opt }))}
-                />
-                {opt}
-              </label>
-            ))}
+            {DRINKS.map(opt => {
+              const active = form.drinks.includes(opt)
+              return (
+                <label
+                  key={opt}
+                  className={`rsvp__option${active ? ' rsvp__option--active' : ''}`}
+                >
+                  <input
+                    type="checkbox"
+                    value={opt}
+                    checked={active}
+                    onChange={() => setForm(f => ({
+                      ...f,
+                      drinks: active
+                        ? f.drinks.filter(d => d !== opt)
+                        : [...f.drinks, opt],
+                    }))}
+                  />
+                  {opt}
+                </label>
+              )
+            })}
           </div>
         </div>
 

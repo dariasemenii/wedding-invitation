@@ -26,9 +26,9 @@
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(253, 246, 240, 0.72) 0%,
-    rgba(253, 246, 240, 0.55) 50%,
-    rgba(253, 246, 240, 0.72) 100%
+    rgba(253, 246, 240, 0.92) 0%,
+    rgba(253, 246, 240, 0.82) 50%,
+    rgba(253, 246, 240, 0.92) 100%
   );
   z-index: 1;
 }
@@ -126,27 +126,6 @@
   letter-spacing: 0.08em;
   color: var(--color-text-light);
   line-height: 2;
-}
-
-.hero__scroll-hint {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--color-primary);
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  animation: fadeInUp 1s ease 1.5s both;
-}
-
-.hero__scroll-hint svg {
-  animation: bounce 2s infinite;
 }
 
 @keyframes bounce {

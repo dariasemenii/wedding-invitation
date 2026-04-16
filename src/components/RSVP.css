@@ -86,7 +86,8 @@
   user-select: none;
 }
 
-.rsvp__option input[type="radio"] {
+.rsvp__option input[type="radio"],
+.rsvp__option input[type="checkbox"] {
   display: none;
 }
 

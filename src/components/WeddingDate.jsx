@@ -23,6 +23,14 @@ export default function WeddingDate() {
       <h2 className="section-title reveal" ref={ref}>Весілля відбудеться</h2>
       <div className="ornament">✦</div>
 
+      <div className="wedding-date__big-date">
+        <span className="wedding-date__big-day">15</span>
+        <div className="wedding-date__big-meta">
+          <span className="wedding-date__big-month">Серпня</span>
+          <span className="wedding-date__big-year">2026</span>
+        </div>
+      </div>
+
       <div className="wedding-date__calendar">
         <p className="wedding-date__month">Серпень 2026</p>
 

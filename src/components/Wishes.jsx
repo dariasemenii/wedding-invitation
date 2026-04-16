@@ -43,7 +43,7 @@ function WishItem({ item, index }) {
     >
       <span className="wishes__icon">{item.icon}</span>
       <p className="wishes__text">{item.text}</p>
-      <p className="wishes__accent">{item.accent}</p>
+      <p className="wishes__text">{item.accent}</p>
     </div>
   )
 }

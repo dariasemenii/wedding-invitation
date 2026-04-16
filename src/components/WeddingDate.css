@@ -6,6 +6,48 @@
   overflow: hidden;
 }
 
+.wedding-date__big-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto 2rem;
+}
+
+.wedding-date__big-day {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: clamp(3rem, 13vw, 5.5rem);
+  line-height: 1;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
+
+.wedding-date__big-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  padding-top: 0.25rem;
+}
+
+.wedding-date__big-month {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: clamp(0.95rem, 4vw, 1.4rem);
+  color: var(--color-text);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.wedding-date__big-year {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: clamp(0.65rem, 2vw, 0.8rem);
+  color: var(--color-primary);
+  letter-spacing: 0.25em;
+}
+
 .wedding-date__calendar {
   max-width: 340px;
   margin: 2.5rem auto 0;
