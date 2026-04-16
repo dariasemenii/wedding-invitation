@@ -3,20 +3,26 @@ import './Hero.css'
 export default function Hero() {
   return (
     <section className="hero">
-      <p className="hero__date-label">14 · June · 2026</p>
+      <p className="hero__date-label">15 · Серпня · 2026</p>
 
       <h1 className="hero__names">
-        Sarah
+        Вадим
         <span>&amp;</span>
-        James
+        Дар&#x2019;я
       </h1>
 
       <div className="hero__divider">✦</div>
 
+      <p className="hero__announce">
+        З радістю повідомляємо,<br />
+        що ми вирішили одружитись
+      </p>
+
       <p className="hero__details">
-        Together with their families<br />
-        joyfully invite you to celebrate<br />
-        their wedding
+        Ми хочемо, щоб у цей особливий день<br />
+        поруч були ті, кого ми любимо.<br />
+        Тому з радістю та щирим серцем<br />
+        запрошуємо Вас на наше весілля!
       </p>
 
       <div className="hero__scroll-hint">

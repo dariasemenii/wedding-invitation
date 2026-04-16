@@ -1,0 +1,48 @@
+.dresscode {
+  padding: 5rem 2rem;
+  background-color: var(--color-bg);
+  text-align: center;
+}
+
+.dresscode__text {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  color: var(--color-text-light);
+  line-height: 1.9;
+  margin-bottom: 1.75rem;
+}
+
+.dresscode__keywords {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 2.5rem;
+}
+
+.dresscode__palette {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.dresscode__swatch {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.dresscode__note {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: clamp(0.95rem, 3vw, 1.15rem);
+  color: var(--color-text-light);
+  letter-spacing: 0.04em;
+}

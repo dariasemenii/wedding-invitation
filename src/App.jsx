@@ -2,7 +2,11 @@ import { useState } from 'react'
 import './App.css'
 import Hero from './components/Hero'
 import EventDetails from './components/EventDetails'
-import MapSection from './components/MapSection'
+import Timeline from './components/Timeline'
+import DressCode from './components/DressCode'
+import Wishes from './components/Wishes'
+import Countdown from './components/Countdown'
+import Footer from './components/Footer'
 import SplashScreen from './components/SplashScreen'
 
 function App() {
@@ -13,7 +17,11 @@ function App() {
       {showSplash && <SplashScreen onDismiss={() => setShowSplash(false)} />}
       <Hero />
       <EventDetails />
-      <MapSection />
+      <Timeline />
+      <DressCode />
+      <Wishes />
+      <Countdown />
+      <Footer />
     </>
   )
 }

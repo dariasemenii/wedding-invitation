@@ -58,6 +58,16 @@
   background-color: var(--color-primary);
 }
 
+.hero__announce {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+  letter-spacing: 0.04em;
+  color: var(--color-text);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
 .hero__details {
   font-family: var(--font-heading);
   font-weight: 300;

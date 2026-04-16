@@ -3,31 +3,22 @@ import './EventDetails.css'
 export default function EventDetails() {
   return (
     <section className="event-details">
-      <h2 className="section-title">Event Details</h2>
+      <h2 className="section-title">Локація</h2>
       <div className="ornament">✦</div>
 
-      <div className="event-details__cards">
-        <div className="event-card">
-          <span className="event-card__icon">⛪</span>
-          <p className="event-card__type">Ceremony</p>
-          <h3 className="event-card__venue">St. Mary's Church</h3>
-          <p className="event-card__time">2:00 PM</p>
-          <p className="event-card__address">
-            123 Church Lane<br />
-            Milan, Italy
-          </p>
-        </div>
-
-        <div className="event-card">
-          <span className="event-card__icon">🌹</span>
-          <p className="event-card__type">Reception</p>
-          <h3 className="event-card__venue">Villa Rosa</h3>
-          <p className="event-card__time">5:00 PM</p>
-          <p className="event-card__address">
-            456 Garden Road<br />
-            Milan, Italy
-          </p>
-        </div>
+      <div className="event-details__body">
+        <p className="event-details__label">Весілля · 15 серпня 2026</p>
+        <h3 className="event-details__venue">Ресторан «Маєток»</h3>
+        <p className="event-details__address">село Городилець</p>
+        <div className="event-details__rule" />
+        <a
+          className="event-details__map-btn"
+          href="https://maps.google.com/?q=Городилець,+Україна"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Відкрити на Google Maps
+        </a>
       </div>
     </section>
   )

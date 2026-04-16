@@ -1,0 +1,48 @@
+.countdown {
+  padding: 5rem 2rem;
+  background-color: var(--color-bg);
+  text-align: center;
+}
+
+.countdown__grid {
+  display: flex;
+  justify-content: center;
+  gap: clamp(1rem, 4vw, 2.5rem);
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.countdown__unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 64px;
+}
+
+.countdown__value {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: clamp(2.8rem, 10vw, 4.5rem);
+  line-height: 1;
+  color: var(--color-text);
+  letter-spacing: 0.02em;
+}
+
+.countdown__label {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+/* Separator dots between units */
+.countdown__unit:not(:last-child)::after {
+  content: none;
+}
+
+.countdown__grid .countdown__unit + .countdown__unit {
+  position: relative;
+}
