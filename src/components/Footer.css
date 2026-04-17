@@ -1,6 +1,6 @@
 .footer {
   padding: 1.25rem 2rem 1rem;
-  background-color: #fff9f5;
+  background-color: var(--color-bg);
   text-align: center;
   border-top: 1px solid var(--color-border);
 }
@@ -20,7 +20,6 @@
 
 .footer__message {
   font-family: var(--font-heading);
-  font-weight: 300;
   font-size: clamp(0.95rem, 3vw, 1.15rem);
   color: var(--color-text);
   letter-spacing: 0.04em;
@@ -29,14 +28,12 @@
 .footer__names {
   font-family: var(--font-heading);
   font-style: italic;
-  font-weight: 300;
   font-size: clamp(0.85rem, 2.5vw, 1rem);
   color: var(--color-text-light);
 }
 
 .footer__date {
   font-family: var(--font-body);
-  font-weight: 300;
   font-size: 0.62rem;
   letter-spacing: 0.3em;
   color: var(--color-primary);

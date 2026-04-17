@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(160deg, var(--color-bg) 0%, #f5e6e6 50%, var(--color-accent) 100%);
+  background-color: var(--color-bg);
   cursor: pointer;
   user-select: none;
   touch-action: manipulation;
@@ -32,10 +32,9 @@
 
 .splash__prompt {
   font-family: 'Cormorant Garamond', serif;
-  font-weight: 300;
   font-size: clamp(1.1rem, 4vw, 1.4rem);
   letter-spacing: 0.08em;
-  color: var(--color-text-light);
+  color: var(--color-text);
   margin: 0;
   animation: splashFadeIn 1s ease 0.6s both;
 }

@@ -22,7 +22,6 @@
 
 .countdown__value {
   font-family: var(--font-heading);
-  font-weight: 300;
   font-size: clamp(2.8rem, 10vw, 4.5rem);
   line-height: 1;
   color: var(--color-text);
@@ -40,7 +39,6 @@
 
 .countdown__label {
   font-family: var(--font-body);
-  font-weight: 300;
   font-size: 0.65rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;

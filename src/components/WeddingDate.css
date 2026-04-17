@@ -1,6 +1,6 @@
 .wedding-date {
   padding: 5rem 2rem;
-  background-color: #fff9f5;
+  background-color: var(--color-bg);
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -16,7 +16,7 @@
 
 .wedding-date__big-day {
   font-family: var(--font-heading);
-  font-weight: 300;
+  font-weight: 700;
   font-size: clamp(3rem, 13vw, 5.5rem);
   line-height: 1;
   color: var(--color-text);
@@ -33,7 +33,7 @@
 
 .wedding-date__big-month {
   font-family: var(--font-heading);
-  font-weight: 300;
+  font-weight: 700;
   font-size: clamp(0.95rem, 4vw, 1.4rem);
   color: var(--color-text);
   letter-spacing: 0.08em;
@@ -42,7 +42,6 @@
 
 .wedding-date__big-year {
   font-family: var(--font-body);
-  font-weight: 300;
   font-size: clamp(0.65rem, 2vw, 0.8rem);
   color: var(--color-primary);
   letter-spacing: 0.25em;
@@ -55,7 +54,6 @@
 
 .wedding-date__month {
   font-family: var(--font-heading);
-  font-weight: 300;
   font-size: 1.1rem;
   letter-spacing: 0.12em;
   color: var(--color-text);
@@ -71,7 +69,6 @@
 
 .wedding-date__dow {
   font-family: var(--font-body);
-  font-weight: 300;
   font-size: 0.65rem;
   letter-spacing: 0.08em;
   color: var(--color-primary);
@@ -82,7 +79,6 @@
 .wedding-date__day {
   animation: dayPopIn 0.4s ease both;
   font-family: var(--font-body);
-  font-weight: 300;
   font-size: 0.85rem;
   color: var(--color-text-light);
   aspect-ratio: 1;
@@ -131,7 +127,6 @@
   flex-wrap: wrap;
   gap: 0.4rem 0.6rem;
   font-family: var(--font-body);
-  font-weight: 300;
   font-size: 0.75rem;
   letter-spacing: 0.12em;
   color: var(--color-text-light);

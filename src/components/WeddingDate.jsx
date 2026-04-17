@@ -48,7 +48,7 @@ export default function WeddingDate() {
               {day === 15 ? (
                 <>
                   <svg className="wedding-date__heart" aria-hidden="true" viewBox="0 0 32 30" fill="none">
-                    <path d="M16 28C16 28 1 18.5 1 9.5a9 9 0 0 1 15-6.7A9 9 0 0 1 31 9.5C31 18.5 16 28 16 28z" fill="#c97a7a"/>
+                    <path d="M16 28C16 28 1 18.5 1 9.5a9 9 0 0 1 15-6.7A9 9 0 0 1 31 9.5C31 18.5 16 28 16 28z" fill="#c0392b"/>
                   </svg>
                   <span className="wedding-date__day-num">15</span>
                 </>

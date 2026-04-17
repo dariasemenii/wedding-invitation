@@ -24,12 +24,7 @@
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(253, 246, 240, 0.92) 0%,
-    rgba(253, 246, 240, 0.82) 50%,
-    rgba(253, 246, 240, 0.92) 100%
-  );
+  background: var(--color-bg);
   z-index: 1;
 }
 
@@ -63,7 +58,6 @@
 
 .hero__date-label {
   font-family: var(--font-body);
-  font-weight: 300;
   font-size: 0.75rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -73,7 +67,7 @@
 
 .hero__names {
   font-family: var(--font-heading);
-  font-weight: 300;
+  font-weight: 700;
   font-size: clamp(3.5rem, 14vw, 7rem);
   line-height: 1.1;
   color: var(--color-text);
@@ -85,7 +79,6 @@
   display: block;
   font-style: italic;
   font-size: clamp(1.8rem, 7vw, 3.5rem);
-  font-weight: 300;
   color: var(--color-text-light);
   letter-spacing: 0.15em;
   margin: 0.25rem 0;
@@ -111,8 +104,8 @@
 
 .hero__announce {
   font-family: var(--font-heading);
-  font-weight: 400;
-  font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+  font-weight: 700;
+  font-size: 18px;
   letter-spacing: 0.04em;
   color: var(--color-text);
   line-height: 1.8;
@@ -121,10 +114,8 @@
 
 .hero__details {
   font-family: var(--font-heading);
-  font-weight: 300;
-  font-size: clamp(1rem, 3vw, 1.3rem);
-  letter-spacing: 0.08em;
-  color: var(--color-text-light);
+  font-size: 15px;
+  color: var(--color-text);
   line-height: 2;
 }
 

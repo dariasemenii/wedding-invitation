@@ -6,10 +6,9 @@
 
 .rsvp__desc {
   font-family: var(--font-heading);
-  font-weight: 300;
-  font-size: clamp(1rem, 3vw, 1.2rem);
-  color: var(--color-text-light);
-  line-height: 1.9;
+  font-size: 15px;
+  color: var(--color-text);
+  line-height: 1.8;
   margin-bottom: 2.5rem;
 }
 
@@ -31,9 +30,8 @@
 
 .rsvp__label {
   font-family: var(--font-body);
-  font-weight: 300;
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
+  font-size: 13px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--color-primary);
 }
@@ -44,7 +42,6 @@
   border-bottom: 1px solid var(--color-border);
   padding: 0.5rem 0;
   font-family: var(--font-heading);
-  font-weight: 300;
   font-size: 1.05rem;
   color: var(--color-text);
   outline: none;
@@ -76,7 +73,6 @@
   padding: 0.45rem 1.1rem;
   border: 1px solid var(--color-border);
   font-family: var(--font-body);
-  font-weight: 300;
   font-size: 0.82rem;
   letter-spacing: 0.04em;
   color: var(--color-text-light);
@@ -100,7 +96,7 @@
 .rsvp__option--active {
   border-color: var(--color-primary);
   color: var(--color-primary);
-  background-color: rgba(201, 169, 138, 0.08);
+  background-color: rgba(208, 216, 29, 0.12);
 }
 
 /* ── Error ─────────────────────────────────────────────── */
@@ -120,7 +116,6 @@
   border: 1px solid var(--color-primary);
   color: var(--color-primary);
   font-family: var(--font-body);
-  font-weight: 300;
   font-size: 0.75rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -152,7 +147,6 @@
 
 .rsvp__thanks-text {
   font-family: var(--font-heading);
-  font-weight: 300;
   font-size: clamp(1rem, 3vw, 1.2rem);
   color: var(--color-text-light);
   line-height: 1.9;
