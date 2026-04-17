@@ -91,6 +91,12 @@
   display: none;
 }
 
+.rsvp__option--disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .rsvp__option--active {
   border-color: var(--color-primary);
   color: var(--color-primary);

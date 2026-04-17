@@ -102,22 +102,37 @@ export default function RSVP() {
           <label className="rsvp__label">Якому напою Ви віддаєте перевагу?</label>
           <div className="rsvp__options rsvp__options--wrap">
             {DRINKS.map(opt => {
-              const active = form.drinks.includes(opt)
+              const isNone     = opt === 'Не вживаю'
+              const noneChosen = form.drinks.includes('Не вживаю')
+              const active     = form.drinks.includes(opt)
+              const disabled   = !isNone && noneChosen
+
+              function toggle() {
+                if (isNone) {
+                  // selecting "Не вживаю" clears everything else
+                  setForm(f => ({ ...f, drinks: active ? [] : ['Не вживаю'] }))
+                } else {
+                  // selecting any drink deselects "Не вживаю" if present
+                  setForm(f => ({
+                    ...f,
+                    drinks: active
+                      ? f.drinks.filter(d => d !== opt)
+                      : [...f.drinks.filter(d => d !== 'Не вживаю'), opt],
+                  }))
+                }
+              }
+
               return (
                 <label
                   key={opt}
-                  className={`rsvp__option${active ? ' rsvp__option--active' : ''}`}
+                  className={`rsvp__option${active ? ' rsvp__option--active' : ''}${disabled ? ' rsvp__option--disabled' : ''}`}
                 >
                   <input
                     type="checkbox"
                     value={opt}
                     checked={active}
-                    onChange={() => setForm(f => ({
-                      ...f,
-                      drinks: active
-                        ? f.drinks.filter(d => d !== opt)
-                        : [...f.drinks, opt],
-                    }))}
+                    disabled={disabled}
+                    onChange={toggle}
                   />
                   {opt}
                 </label>
