@@ -34,6 +34,7 @@
 /* Dot + vertical line column */
 .timeline__marker {
   display: flex;
+  height: 100%;
   flex-direction: column;
   align-items: center;
 }

@@ -14,8 +14,8 @@
 
 .dresscode__keywords {
   font-family: var(--font-body);
-  font-size: 0.75rem;
-  letter-spacing: 0.22em;
+  font-size: 13px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-primary);
   margin-bottom: 2.5rem;

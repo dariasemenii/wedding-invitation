@@ -112,22 +112,26 @@
 .rsvp__submit {
   align-self: center;
   padding: 0.75rem 2.5rem;
-  background: none;
+  background-color: var(--color-primary);
   border: 1px solid var(--color-primary);
-  color: var(--color-primary);
+  color: var(--color-text);
   font-family: var(--font-body);
   font-size: 0.75rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 999px;
-  transition: background-color 0.2s, color 0.2s;
+  transition: opacity 0.2s;
 }
 
 .rsvp__submit:hover,
 .rsvp__submit:active {
-  background-color: var(--color-primary);
-  color: #fff;
+  opacity: 0.85;
+}
+
+.rsvp__submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 /* ── Thank you state ───────────────────────────────────── */
