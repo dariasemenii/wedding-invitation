@@ -1,7 +1,7 @@
 import './DressCode.css'
 import { useReveal } from '../hooks/useReveal'
 
-const palette = ['#f5e6e6', '#e8d5c4', '#d4c5b0', '#c9b8a8', '#e6ded5', '#dde8e0']
+const palette = ['#f2e1d1', '#d2eafc', '#ffd7e3', '#ced645', '#96a383', '#9c8e82', '#755a49']
 
 export default function DressCode() {
   const ref = useReveal()
