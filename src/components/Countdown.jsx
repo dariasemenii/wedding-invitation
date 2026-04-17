@@ -54,7 +54,6 @@ export default function Countdown() {
     { value: timeLeft.days,    label: 'днів' },
     { value: timeLeft.hours,   label: 'годин' },
     { value: timeLeft.minutes, label: 'хвилин' },
-    { value: timeLeft.seconds, label: 'секунд' },
   ]
 
   return (
