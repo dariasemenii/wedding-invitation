@@ -31,6 +31,7 @@
 .rsvp__label {
   font-family: var(--font-body);
   font-size: 13px;
+  font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--color-primary);
