@@ -1,10 +1,10 @@
 import './Hero.css'
-import ParticleCanvas from './ParticleCanvas'
+import photo from '../assets/we.jpeg'
 
 export default function Hero() {
   return (
     <section className="hero">
-      <ParticleCanvas count={55} />
+      <img className="hero__photo" src={photo} alt="" />
       <div className="hero__overlay" />
 
       <div className="hero__content">

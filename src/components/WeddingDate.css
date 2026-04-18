@@ -69,7 +69,8 @@
 
 .wedding-date__dow {
   font-family: var(--font-body);
-  font-size: 0.65rem;
+  font-size: 12px;
+  font-weight: 600;
   letter-spacing: 0.08em;
   color: var(--color-primary);
   text-transform: uppercase;
