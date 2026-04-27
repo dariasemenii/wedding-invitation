@@ -97,7 +97,7 @@
 .rsvp__option--active {
   border-color: var(--color-primary);
   color: var(--color-primary);
-  background-color: rgba(208, 216, 29, 0.12);
+  background-color: #ebdcd3;
 }
 
 /* ── Error ─────────────────────────────────────────────── */

@@ -7,7 +7,7 @@ function SplashScreen({ onDismiss }) {
   function handleClick() {
     if (opening) return
     setOpening(true)
-    setTimeout(onDismiss, 2600)
+    setTimeout(onDismiss, 2000)
   }
 
   return (

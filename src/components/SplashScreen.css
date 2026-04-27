@@ -15,7 +15,7 @@
 }
 
 .splash--exit {
-  animation: splashSlideOut 0.5s ease-in-out 2.1s both;
+  animation: splashSlideOut 0.5s ease-in-out 1.5s both;
 }
 
 @keyframes splashSlideOut {

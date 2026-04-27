@@ -2,7 +2,7 @@ import './DressCode.css'
 import { useReveal } from '../hooks/useReveal'
 
 const ladies = [ '#62745c', '#725d48', '#6d3a23', '#cfb88c' ,'#f2d0c0', '#ffd7e3', '#f6ebd0']
-const gents  = ['#ffffff', '#b29a7e', '#725d48','#1a1a1a']
+const gents  = [ '#b29a7e', '#725d48', '#ffffff', '#1a1a1a']
 
 export default function DressCode() {
   const ref = useReveal()

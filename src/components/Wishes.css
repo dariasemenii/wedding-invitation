@@ -39,7 +39,7 @@
 
 .wishes__text {
   font-family: var(--font-heading);
-  font-size: 15px;
+  font-size: 16px;
   color: var(--color-text);
   line-height: 1.85;
   margin: 0;
@@ -48,7 +48,7 @@
 .wishes__text:last-child {
   font-style: italic;
   color: var(--color-text-light);
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /* thin line separator between items */
