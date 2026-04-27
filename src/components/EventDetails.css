@@ -52,7 +52,7 @@
   padding: 0.65rem 2rem;
   border-radius: 999px;
   border: 1px solid var(--color-primary);
-  background-color: var(--color-primary);
+  background-color: transparent;
   color: var(--color-text);
   font-family: var(--font-body);
   font-weight: 400;
@@ -60,10 +60,10 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   text-decoration: none;
-  transition: opacity 0.2s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .event-details__map-btn:hover,
 .event-details__map-btn:active {
-  opacity: 0.85;
+  background-color: var(--color-primary);
 }

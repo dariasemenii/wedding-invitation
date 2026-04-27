@@ -43,7 +43,7 @@
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-text-light);
+  color: var(--color-text);
 }
 
 .dresscode__divider {

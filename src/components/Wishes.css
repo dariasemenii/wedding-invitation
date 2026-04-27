@@ -7,47 +7,58 @@
 }
 
 .wishes__list {
-  max-width: 420px;
+  max-width: 460px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 3.5rem;
 }
 
 .wishes__item {
-  padding: 2.5rem 1rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
-.wishes__item:not(:last-child)::after {
-  content: '·  ·  ·';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 0.65rem;
-  letter-spacing: 0.4em;
-  color: var(--color-accent);
+/* large decorative quote mark */
+.wishes__item::before {
+  content: '\201C';
+  font-family: 'Great Vibes', cursive;
+  font-size: 5rem;
+  line-height: 0.5;
+  color: var(--color-primary);
+  opacity: 0.35;
+  display: block;
 }
 
 .wishes__icon {
-  display: block;
-  font-size: 2rem;
-  margin-bottom: 1.25rem;
+  display: none;
 }
 
 .wishes__text {
   font-family: var(--font-heading);
-  font-size: 16px;
+  font-size: 15px;
   color: var(--color-text);
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
+  line-height: 1.85;
+  margin: 0;
 }
 
-.wishes__accent {
-  font-family: var(--font-heading);
-  font-weight: 400;
-  font-size: clamp(1rem, 3.2vw, 1.2rem);
-  color: var(--color-text);
-  line-height: 1.8;
+.wishes__text:last-child {
+  font-style: italic;
+  color: var(--color-text-light);
+  font-size: 14px;
+}
+
+/* thin line separator between items */
+.wishes__item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: -1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 1px;
+  background-color: var(--color-border);
 }
