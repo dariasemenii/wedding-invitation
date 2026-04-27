@@ -143,7 +143,11 @@ export default function RSVP() {
 
         {error && <p className="rsvp__error">{error}</p>}
 
-        <button className="rsvp__submit" type="submit" disabled={loading}>
+        <button
+          className="rsvp__submit"
+          type="submit"
+          disabled={loading || !form.name.trim() || !form.attending || form.drinks.length === 0}
+        >
           {loading ? 'Надсилаємо…' : 'Надіслати відповідь'}
         </button>
 
