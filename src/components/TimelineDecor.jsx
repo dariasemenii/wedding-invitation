@@ -22,15 +22,15 @@ export default function TimelineDecor() {
       {/* Rings — top right */}
       <svg className="tl-decor tl-decor--rings-tr" viewBox="0 0 90 50" fill="none">
         <circle cx="28" cy="25" r="20" stroke="#c4735a" strokeWidth="3" opacity="0.05"/>
-        <circle cx="28" cy="25" r="14" stroke="#e8a898" strokeWidth="1.5" opacity="0.07"/>
+        <circle cx="28" cy="25" r="14" stroke="#c4735a" strokeWidth="1.5" opacity="0.07"/>
         <circle cx="58" cy="25" r="20" stroke="#c4735a" strokeWidth="3" opacity="0.05"/>
-        <circle cx="58" cy="25" r="14" stroke="#e8a898" strokeWidth="1.5" opacity="0.07"/>
+        <circle cx="58" cy="25" r="14" stroke="#c4735a" strokeWidth="1.5" opacity="0.07"/>
       </svg>
 
       {/* Heart — mid left */}
       <svg className="tl-decor tl-decor--heart-ml" viewBox="0 0 60 55" fill="none">
-        <path d="M30 48C30 48 5 34 5 18a13 13 0 0 1 25-5 13 13 0 0 1 25 5c0 16-25 30-25 30z" fill="#6d3020" opacity="0.05"/>
-        <path d="M30 48C30 48 5 34 5 18a13 13 0 0 1 25-5 13 13 0 0 1 25 5c0 16-25 30-25 30z" stroke="#6d3020" strokeWidth="1" opacity="0.2"/>
+        <path d="M30 48C30 48 5 34 5 18a13 13 0 0 1 25-5 13 13 0 0 1 25 5c0 16-25 30-25 30z" fill="#c4735a" opacity="0.05"/>
+        <path d="M30 48C30 48 5 34 5 18a13 13 0 0 1 25-5 13 13 0 0 1 25 5c0 16-25 30-25 30z" stroke="#c4735a" strokeWidth="1" opacity="0.2"/>
       </svg>
 
       {/* Champagne — bottom right */}
@@ -46,13 +46,13 @@ export default function TimelineDecor() {
 
       {/* Small scattered petals */}
       <svg className="tl-decor tl-decor--petal-1" viewBox="0 0 30 50" fill="none">
-        <ellipse cx="15" cy="25" rx="9" ry="22" fill="#e8a898" opacity="0.08" transform="rotate(20 15 25)"/>
+        <ellipse cx="15" cy="25" rx="9" ry="22" fill="#c4735a" opacity="0.08" transform="rotate(20 15 25)"/>
       </svg>
       <svg className="tl-decor tl-decor--petal-2" viewBox="0 0 30 50" fill="none">
         <ellipse cx="15" cy="25" rx="8" ry="20" fill="#c4735a" opacity="0.07" transform="rotate(-15 15 25)"/>
       </svg>
       <svg className="tl-decor tl-decor--petal-3" viewBox="0 0 30 50" fill="none">
-        <ellipse cx="15" cy="25" rx="7" ry="18" fill="#8c4a32" opacity="0.06" transform="rotate(35 15 25)"/>
+        <ellipse cx="15" cy="25" rx="7" ry="18" fill="#c4735a" opacity="0.06" transform="rotate(35 15 25)"/>
       </svg>
 
       {/* Stars / sparkles */}
