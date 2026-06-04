@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './RSVP.css'
 import { useReveal } from '../hooks/useReveal'
 
-const DRINKS = ['Вино', 'Шампанське', 'Горілка', 'Ром', 'Джин', 'Не вживаю']
+const DRINKS = ['Вино', 'Шампанське', 'Горілка', 'Коньяк', 'Ром', 'Джин', 'Не вживаю']
 
 export default function RSVP() {
   const titleRef = useReveal()
