@@ -99,7 +99,7 @@ export default function RSVP() {
 
         {/* Drink */}
         <div className="rsvp__field">
-          <label className="rsvp__label">Якому напою Ви віддаєте перевагу?</label>
+          <label className="rsvp__label">Якому напою Ви віддаєте перевагу? <span className="rsvp__hint">(можна обрати декілька)</span></label>
           <div className="rsvp__options rsvp__options--wrap">
             {DRINKS.map(opt => {
               const isNone     = opt === 'Не вживаю'
